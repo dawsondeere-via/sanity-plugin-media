@@ -10,6 +10,16 @@ import {divider, inputs} from './config/searchFacets'
 // null values are represented as menu dividers
 export const ORDER_OPTIONS: ({direction: OrderDirection; field: string} | null)[] = [
   {
+    direction: 'asc',
+    field: 'originalFilename'
+  },
+  {
+    direction: 'desc',
+    field: 'originalFilename'
+  },
+  // Divider
+  null,
+  {
     direction: 'desc',
     field: '_createdAt'
   },
@@ -26,16 +36,6 @@ export const ORDER_OPTIONS: ({direction: OrderDirection; field: string} | null)[
   {
     direction: 'asc' as OrderDirection,
     field: '_updatedAt'
-  },
-  // Divider
-  null,
-  {
-    direction: 'asc',
-    field: 'originalFilename'
-  },
-  {
-    direction: 'desc',
-    field: 'originalFilename'
   },
   // Divider
   null,
